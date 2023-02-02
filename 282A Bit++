@@ -1,0 +1,12 @@
+def bit(l):
+    x=0
+    for i in l:
+        if i[1]=="+":
+            x+=1
+        else:
+            x-=1
+    return x
+l=[]
+for _ in range(int(input())):
+    l.append(input())
+print(bit(l))
