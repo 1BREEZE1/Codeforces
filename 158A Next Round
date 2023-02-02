@@ -1,0 +1,17 @@
+def nextRound(s,l):
+    if  l[0]==0:
+        return 0
+    c=0
+    for i in l:
+        if c==s or i==0:
+            break
+        c+=1
+    for i in range(c,len(l)):
+        if l[i-1]==l[i]:
+            c+=1
+        else:
+            break
+    return c
+a=input().split()
+l=list(map(int,input().split()))
+print(nextRound(int(a[1]),l))
