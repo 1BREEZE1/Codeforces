@@ -1,0 +1,11 @@
+#Python
+def team(m):
+    c=0
+    for i in m:
+        if i.count(1)>1:
+            c+=1
+    return c
+m=[]
+for i in range(int(input())):
+    m.append(list(map(int,input().split())))
+print(team(m))
