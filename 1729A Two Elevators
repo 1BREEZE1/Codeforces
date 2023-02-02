@@ -1,0 +1,14 @@
+def sol(a,b,c):
+    a1=a-1
+    if c>b:
+        b2=(c-b)+(c-1)
+    else:
+        b2=b-1
+    if a1==b2:
+        return 3
+    if a1<b2:
+        return 1
+    return 2
+for _ in range(int(input())):
+    a=input().split()
+    print(sol(int(a[0]),int(a[1]),int(a[2])))
