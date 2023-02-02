@@ -1,0 +1,15 @@
+def door(k,d1,d2,d3):
+    if k==1:
+        if (d1==3 and d3==2) or ( d1==2 and d2==3):
+            return "YES"
+    if k==2:
+        if (d2==1 and d1==3) or (d2==3 and d3==1):
+            return "YES"
+    if k==3:
+        if (d3==1 and d1==2) or (d3==2 and d2==1):
+            return "YES"
+    return "NO"
+for _ in range(int(input())):
+    k=int(input())
+    a=input().split()
+    print(door(k,int(a[0]),int(a[1]),int(a[2])))
