@@ -1,0 +1,8 @@
+def sol(s):
+    l=list(s)
+    l.sort()
+    r="".join(l)
+    return r+r[::-1]
+for _ in range(int(input())):
+    a=input()
+    print(sol(a))
