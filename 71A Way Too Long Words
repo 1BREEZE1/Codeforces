@@ -1,0 +1,7 @@
+# Python
+def a10n(s):
+    if len(s)<11:
+        return s
+    return s[0]+str(len(s)-2)+s[-1]
+for _ in range(int(input())):
+    print(a10n(input()))
