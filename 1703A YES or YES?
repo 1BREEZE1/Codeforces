@@ -1,0 +1,6 @@
+def yes(s):
+    if s.lower()=="yes":
+        return "YES"
+    return "NO"
+for _ in range(int(input())):
+    print(yes(input()))
