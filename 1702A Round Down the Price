@@ -1,0 +1,8 @@
+def RoundPrice(p):
+    l=len(str(p))
+    m=int("1"+"0"*(l-1))
+    r=p-m
+    return r
+for _ in range(int(input())):
+    n=int(input())
+    print(RoundPrice(n))
